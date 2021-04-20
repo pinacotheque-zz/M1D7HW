@@ -69,16 +69,16 @@
       */
 
       const changePcontent = function () {
-        let changeTextOfP = document.querySelector('div p')
+        let changeTextOfP = document.querySelector('p')
         changeTextOfP.innerText = 'Text has been changed!!!'
       };
 
       /* EXERCISE 4
-      Write a function for changing the destination of every link to https://www.google.com
+      Write a function for changing the destination of every link to 
       */
 
       const changeUrls = function () {
-        
+       
       };
 
       /* EXERCISE 5
@@ -96,8 +96,11 @@
       */
 
       const addParagraph = function (content) {
-        
+        let newParagraph = document.createElement('p')
+        newParagraph.innerText ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus blandit nibh eget porta. Integer in metus in leo efficitur sollicitudin in sodales massa. Curabitur ac neque tortor. Nullam velit nisl, mattis in nulla eu, faucibus facilisis lacus. Donec vitae ex finibus, suscipit felis non, porta enim. Maecenas bibendum purus erat. Etiam sodales, diam eu bibendum bibendum, risus orci pulvinar diam, ut imperdiet ex est eget odio. Pellentesque lacinia non nulla in vestibulum.'
       };
+      let parentDiv = document.querySelector("div")
+        parentDiv.appendChild(addParagraph)
 
       /* EXERCISE 7
       Write a function for making the first UL disappear.
